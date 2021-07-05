@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularmaterial';
+ opened:boolean = true
+//  share:boolean = true
+ //sharebtn:any
 }

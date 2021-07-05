@@ -1,0 +1,23 @@
+<p>addproperty works!</p>
+
+
+<div class="form-container">
+    <mat-card>
+        <div fxLayout='column'>
+            <div fxFlex>
+                <form #propertyPost="ngForm" (ngSubmit)="onsubmit(propertyPost.value)" action="">
+                    <input type="text" name="title" placeholder="title" id="" [(ngModel)]="name">
+<button type="submit">Submit</button>
+                </form>
+            </div>
+            <div fxFlex>
+                <mat-form-field>
+                    <mat-label>id</mat-label>
+                    <input class="text-align" [(ngModel)]="name" matInput placeholder="id">
+                </mat-form-field>
+            </div>
+        </div>
+    </mat-card>
+</div>
+
+{{name}}

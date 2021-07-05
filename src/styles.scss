@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-menu-features {
+    max-width: 100% !important;
+    margin: 0 auto;
+}
+
+.mat-menu-features .mat-menu-content:not(:empty) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+div#cdk-overlay-0 {
+    right: 49px !important;
+    top: 69px !important;
+}

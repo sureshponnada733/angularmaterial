@@ -1,0 +1,98 @@
+<!-- default nav bar -->
+
+<mat-toolbar color="primary" class="mat-elevation-z8">
+  <mat-toolbar-row>
+    <div class="logo">
+
+      <mat-icon fxHide="true" fxHide.sm="false" fxHide.xs="false" style="cursor: pointer;vertical-align: middle;
+        margin-right: 10px;" (click)="opened=!opened">menu</mat-icon>
+      <!-- <button fxHide.lg="true" (click)="opened=!opened" mat-button color="">menu</button> -->
+      <a href="/"><img src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png" alt="" /></a>
+    </div>
+    <div class="menu-spacing"></div>
+
+    <div fxHide="true" fxHide.lg="false" fxHide.md="false" class="featues-section">
+      <button mat-button [matMenuTriggerFor]="aboveMenu">Featutres <span class="iconify" data-width="1.5em"
+          data-height="1.5em" data-icon="uil:angle-down" data-inline="false"></span></button>
+      <mat-menu class="mat-menu-features" #aboveMenu="matMenu">
+        <div class="featurelist-dpd">
+          <app-featureslist></app-featureslist>
+        </div>
+      </mat-menu>
+      <a mat-button class="mat-focus-indicator">Docs</a>
+      <a mat-button>Resources</a>
+      <a mat-button>Events</a>
+      <a mat-button>Blog</a>
+
+    </div>
+
+    <div class="social icons" fxLayoutGap="12px">
+      <a href="#" matTooltip="Twitter">
+        <span class="iconify" data-icon="simple-icons:twitter" style="color: #fff" data-inline="false"
+          data-width="1.2em" data-height="1.2em"></span>
+      </a>
+      <a href="#" matTooltip="youtube">
+        <span class="iconify" data-icon="simple-icons:youtube" style="color: #fff" data-inline="false"
+          data-width="1.2em" data-height="1.2em"></span>
+      </a>
+      <mat-form-field>
+        <!-- <mat-icon matPrefix>search</mat-icon> -->
+        <input matInput type="search" placeholder="search here" class="search-input">
+      </mat-form-field>
+    </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- default nav bar -->
+
+
+<!-- mobile sidenav -->
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="mat-elevation-z5" mode="side" [(opened)]="opened" fxHide.xs="false" fxHide="true"
+    fxHide.sm="false">
+    <div class="sidenav-mobilemenu">
+      <button class="menu-button" mat-button [matMenuTriggerFor]="aboveMenu"><span>Featutres</span> <span
+          class="iconify" data-width="1.5em" data-height="1.5em" data-icon="uil:angle-down"
+          data-inline="false"></span></button>
+      <mat-menu #aboveMenu="matMenu" yPosition="above">
+        <button class="menu-button"><span>Item 1</span></button>
+        <button class="menu-button"><span>Item 2</span></button>
+      </mat-menu>
+      <button class="menu-button" mat-button><span>Docs</span></button>
+      <button class="menu-button" mat-button><span>Resources</span></button>
+      <button class="menu-button" mat-button><span>Events</span></button>
+      <button class="menu-button" mat-button><span>Blog</span></button>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+      <div *ngIf="router.url === '/'">
+        <!-- <app-properties></app-properties> -->
+        <app-addproperty></app-addproperty>
+      </div>
+
+      <div *ngIf="router.url === '/filters'">
+        <app-filters></app-filters>
+      </div>
+
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- mobile sidenav -->
+
+<!-- <div fxLayout="row wrap"style="width: 80%;
+   margin: 0 auto;">
+     <div fxFlex="25%" fxFlex.xs="100%" layout-align="start center">content</div>
+     <div fxFlex="25%" fxFlex.xs="100%" layout-align="start center">content</div>
+     <div fxFlex="25%" fxFlex.xs="100%" layout-align="start center">content</div>
+     <div fxFlex="25%" fxFlex.xs="100%" layout-align="start center">content</div>
+   </div> -->
+
+
+
+
+
+
+<!-- <router-outlet></router-outlet> -->

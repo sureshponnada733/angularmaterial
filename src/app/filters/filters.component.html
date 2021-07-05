@@ -1,0 +1,147 @@
+<div fxFlexLayout="row" fxLayoutGap="12px">
+  <div fxFlex.lg="25%">
+    <mat-card style="height: calc(100vh - 98px);">
+
+      <div class="filter-section" style="margin: 12px">
+
+        <h2 style="font-size: 15px; text-align: center; margin: 12px 0;">Filters</h2>
+        <mat-divider style="position: relative; margin-bottom: 12px;"></mat-divider>
+
+        <!-- accordin open 1-->
+        <mat-accordion>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Location
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <section class="example-section">
+
+              <p>
+                <mat-checkbox formControlName="pepperoni">Sujathanagar</mat-checkbox>
+              </p>
+              <p>
+                <mat-checkbox formControlName="extracheese">Pendurthi</mat-checkbox>
+              </p>
+              <p>
+                <mat-checkbox formControlName="mushroom">Gopalapatnam</mat-checkbox>
+              </p>
+            </section>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <!-- accordin end -->
+
+        <!-- accordin open 2-->
+        <mat-accordion>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Price
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <section class="example-section">
+
+              <p>
+                <mat-checkbox formControlName="pepperoni">Sujathanagar</mat-checkbox>
+              </p>
+              <p>
+                <mat-checkbox formControlName="extracheese">Pendurthi</mat-checkbox>
+              </p>
+              <p>
+                <mat-checkbox formControlName="mushroom">Gopalapatnam</mat-checkbox>
+              </p>
+            </section>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <!-- accordin end -->
+
+        <!-- accordin open 3-->
+        <mat-accordion>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Type (House/Flat)
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <section class="example-section">
+
+              <p>
+                <mat-checkbox formControlName="pepperoni">Sujathanagar</mat-checkbox>
+              </p>
+              <p>
+                <mat-checkbox formControlName="extracheese">Pendurthi</mat-checkbox>
+              </p>
+              <p>
+                <mat-checkbox formControlName="mushroom">Gopalapatnam</mat-checkbox>
+              </p>
+            </section>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <!-- accordin end -->
+
+      </div>
+
+    </mat-card>
+  </div>
+  <div fxFlex.lg="75%">
+    <div fxFlexLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="12px">
+      <div fxFlex.lg="33%">
+        <mat-card class="example-card">
+
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+            alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+              bred for hunting.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div fxFlex.lg="33%">
+        <mat-card class="example-card">
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+            alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+              bred for hunting.
+            </p>
+          </mat-card-content>
+
+        </mat-card>
+      </div>
+      <div fxFlex.lg="33%">
+        <mat-card class="example-card">
+
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+            alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+              bred for hunting.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Self aware panel
+            </mat-panel-title>
+            <mat-panel-description>
+                Currently I am {{panelOpenState ? 'open' : 'closed'}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+    </mat-expansion-panel>
+</mat-accordion> -->
