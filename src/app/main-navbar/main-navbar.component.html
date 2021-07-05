@@ -72,6 +72,10 @@
         <!-- <app-addproperty></app-addproperty> -->
       </div>
 
+      <div *ngIf="router.url === '/addproperties'">
+        <app-addproperty></app-addproperty>
+      </div>
+
       <div *ngIf="router.url === '/filters'">
         <app-filters></app-filters>
       </div>

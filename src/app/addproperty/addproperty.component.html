@@ -1,23 +1,34 @@
 <p>addproperty works!</p>
 
 
+<!-- title:string='';
+like:string='';
+subtitle:string='';
+url:string='';
+description:string=''; -->
+
 <div class="form-container">
     <mat-card>
         <div fxLayout='column'>
             <div fxFlex>
                 <form #propertyPost="ngForm" (ngSubmit)="onsubmit(propertyPost.value)" action="">
-                    <input type="text" name="title" placeholder="title" id="" [(ngModel)]="name">
-<button type="submit">Submit</button>
+                    <input type="text" name="title" placeholder="title" id="" [(ngModel)]="title">
+                    <!-- <input type="text" name="like" placeholder="like" id="" [(ngModel)]="like">
+                    <input type="text" name="share" placeholder="share" id="" [(ngModel)]="share"> -->
+                    <input type="text" name="subtitle" placeholder="subtitle" id="" [(ngModel)]="subtitle">
+                    <input type="text" name="url" placeholder="url" id="" [(ngModel)]="url">
+                    <input type="text" name="description" placeholder="description" id="" [(ngModel)]="description">
+                    <button type="submit">Submit</button>
                 </form>
             </div>
             <div fxFlex>
-                <mat-form-field>
+                <!-- <mat-form-field>
                     <mat-label>id</mat-label>
                     <input class="text-align" [(ngModel)]="name" matInput placeholder="id">
-                </mat-form-field>
+                </mat-form-field> -->
             </div>
         </div>
     </mat-card>
 </div>
 
-{{name}}
+<!-- {{name}} -->

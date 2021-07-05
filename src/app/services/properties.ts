@@ -4,7 +4,7 @@
         subtitle: string;
         url: string;
         description: string;
-        share: string;
-        like: string;
+        share?: string;
+        like?: string;
     }
 

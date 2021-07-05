@@ -1,5 +1,5 @@
-<div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="12px">
-  <div fxFlex="25%" *ngFor = "let property of properties">
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign.sm="center center" fxLayoutAlign.md="center" fxLayoutGap="12px">
+  <div class="property-clm" fxFlex.lg="24%" *ngFor = "let property of properties">
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
@@ -14,8 +14,8 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button>{{property.like}}</button>
-        <button (click)="share=!share" mat-button>{{property.share}}</button>
+        <button mat-button>Like</button>
+        <button (click)="share=!share" mat-button>Share</button>
       </mat-card-actions>
     </mat-card>
   </div>
