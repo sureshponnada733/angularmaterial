@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +28,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FeatureslistComponent } from './features/featureslist/featureslist.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AddpropertyComponent } from './addproperty/addproperty.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+
 
 
 @NgModule({
@@ -42,12 +44,14 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     HttpClientModule,
+    CommonModule,
     BrowserModule,
     MatExpansionModule,
     MatCheckboxModule,
     MatButtonModule,
     MatListModule,
     FormsModule,
+    ReactiveFormsModule,
     FlexLayoutModule,
     MatMenuModule,
     MatSidenavModule,
