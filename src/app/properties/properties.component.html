@@ -1,5 +1,19 @@
-<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign.sm="center center" fxLayoutAlign.md="center" fxLayoutGap="12px">
-  <div class="property-clm" fxFlex.lg="24%" *ngFor = "let property of properties">
+<div
+ fxLayout="row wrap"
+ fxLayout.xs="column"
+ fxLayout.gt-xs="row wrap"
+ 
+
+ fxLayoutAlign.sm="" fxLayoutAlign.md="" fxLayoutGap="12px">
+
+  <div class="property-clm"
+     fxFlex.gt-xs="48"
+      fxFlex.gt-sm="32"
+      fxFlex.gt-md="24"
+
+     
+  
+    *ngFor = "let property of properties">
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
